@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class RateRetriever {
 
-    private static final String URL = "https://api.apilayer.com/fixer/latest?apikey=1yfqEbNIuCR8K6SnhXczvpVmxt3R1B7U";
+    private static final String URL = "http://data.fixer.io/api/latest?access_key=K9kolJmhXZdHcc11aZYfW9o50e8QckSo";
 
     @Cacheable("rates")
     public Rate getRate() {
